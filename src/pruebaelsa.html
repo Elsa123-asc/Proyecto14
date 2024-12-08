@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi aplicación</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+</head>
+<body>
+    <script src="./javascript/index.js"></script>
+
+    <!-- Open PostMx -->
+    <h1>Proyecto 14</h1>
+    <div id="ocultar1">
+        <h2 style="background-color:tomato;">Mostrar mensaje</h2>
+        <p>Haga clic en el siguiente boton, para ver un mensaje.</p>
+        <button onclick="mostrarMensaje()">Mostrar mensaje</button>
+    </div>
+
+    <h2 style="background-color:yellowgreen;">Ocultar boton</h2>
+    <p>Haga clic en el siguiente boton, para ocultar el boton.</p>
+    <button id="botton1" onclick="ocultarBoton()">Confirmar</button>
+
+
+    <h2 style="background-color:yellow;">Nuevo boton</h2>
+    <p>Haga clic en el siguiente boton, para crear uno nuevo.</p>
+    <button onclick="nuevoBoton()">Da clic</button>
+    <button id="botton2" style="display:none;">Da clic</button>
+
+    <h2 style="background-color:blue;">Cambiar texto</h2>
+    <p>Haga clic en el siguiente boton, para colocar Hola.</p>
+    <button id ="botton3" onclick="cambiarTexto()">Da clic</button>
+
+    <script>
+        function mostrarMensaje() {
+            alert ("Gracias por tu compra");
+        };
+    </script>
+    <script>
+        function ocultarBoton() {
+            $("#botton1").hide();
+        }
+    </script>
+
+    <script>
+    function nuevoBoton() {
+        $("#botton2").show();
+    }
+    </script>
+
+    <script>
+    function cambiarTexto() {
+        $("#botton3").text("Hola");
+    }
+    </script>
+</body>
+</html>
